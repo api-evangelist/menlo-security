@@ -1,8 +1,32 @@
 aid: menlo-security
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/menlo-security.png
 name: Menlo Security
-description: Menlo Security is a company surfaced as a portfolio company of general-catalyst and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Menlo Security provides a cloud-delivered Browser Security Platform that protects
+  enterprises and their AI agents at the browser session layer, where most modern
+  attacks and data loss occur. Its core capabilities include pre-render threat
+  prevention using multimodal visual and DOM analysis, patented Positive Selection
+  file security that reconstructs documents to strip malware and macros, AI Adaptive
+  DLP for real-time detection and masking of PII/PHI and financial data, invisible
+  browser isolation for high-risk activity, and Menlo Secure Application Access for
+  identity-based zero-trust access to SaaS, legacy, and private applications for both
+  human users and autonomous agents. The platform integrates with existing SASE/SSE,
+  EDR/EPP, and SOC tooling through a single unified control plane. Menlo Security is
+  privately held and backed by investors including General Catalyst. The company
+  operates primarily as an enterprise security vendor and does not publish a public
+  developer API program; administrative and reporting APIs are available to customers
+  through the authenticated admin console.
 url: https://raw.githubusercontent.com/api-evangelist/menlo-security/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +36,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Security
+- Browser Security
+- Zero Trust
+- Isolation
+- Data Loss Prevention
+- Secure Web Gateway
+- Cybersecurity
+- AI Security
 apis: []
+common:
+- type: DomainSecurity
+  url: security/menlo-security-domain-security.yml
+- type: Website
+  url: https://www.menlosecurity.com/
+- type: Blog
+  url: https://www.menlosecurity.com/blog
+- type: Support
+  url: https://csportal.menlosecurity.com/hc/en-us
+- type: TermsOfService
+  url: https://www.menlosecurity.com/terms
+- type: PrivacyPolicy
+  url: https://www.menlosecurity.com/privacy-policy
+- type: TrustCenter
+  url: security/menlo-security-trust-center.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
