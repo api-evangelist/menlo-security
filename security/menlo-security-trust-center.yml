@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.menlosecurity.com/legal (linked from site legal/compliance)
+url: https://app.vanta.com/menlosecurity.com/trust/1wex2ncj4qnhvo9p19xxna
+trust_center_platform: Vanta
+compliance_page: https://www.menlosecurity.com/about/compliance
+certifications: []
+notes: >-
+  Menlo Security publishes a Vanta-hosted Trust Center and a dedicated compliance
+  page. Both surfaces are JavaScript-rendered single-page apps, so the specific
+  named certifications (e.g. SOC 2, ISO 27001) could not be enumerated from the
+  static HTML during this probe and are intentionally left empty rather than
+  fabricated. The Trust Center URL and compliance program page are verified live
+  (HTTP 200). The domain also publishes a security engineering contact via a CAA
+  iodef record (mailto:seceng@menlosecurity.com).
+evidence:
+- source: https://www.menlosecurity.com/about/compliance
+  http_status: 200
+  kind: compliance-program-page
+- source: https://app.vanta.com/menlosecurity.com/trust/1wex2ncj4qnhvo9p19xxna
+  http_status: 200
+  kind: vanta-trust-center
